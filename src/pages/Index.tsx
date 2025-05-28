@@ -1,12 +1,109 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from 'react';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { ImageUpload } from '../components/ImageUpload';
+import { PredictionResult } from '../components/PredictionResult';
+import { PredictionHistory } from '../components/PredictionHistory';
+import { Footer } from '../components/Footer';
+
+export interface Prediction {
+  id: string;
+  result: string;
+  image: string;
+  timestamp: Date;
+  confidence?: number;
+}
 
 const Index = () => {
+  const [currentPrediction, setCurrentPrediction] = useState<Prediction | null>(null);
+  const [predictions, setPredictions] = useState<Prediction[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handlePrediction = async (file: File) => {
+    setIsLoading(true);
+    setError(null);
+    
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+
+      // Create image URL for preview
+      const imageUrl = URL.createObjectURL(file);
+
+      const response = await fetch('http://localhost:5000/predict', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
+      const newPrediction: Prediction = {
+        id: Date.now().toString(),
+        result: data.result,
+        image: imageUrl,
+        timestamp: new Date(),
+        confidence: data.confidence || undefined,
+      };
+
+      setCurrentPrediction(newPrediction);
+      setPredictions(prev => [newPrediction, ...prev]);
+      
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Prediction failed. Please try again.';
+      setError(errorMessage);
+      console.error('Prediction error:', err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleReset = () => {
+    setCurrentPrediction(null);
+    setError(null);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      <Header />
+      
+      <main className="container mx-auto px-4 py-8 space-y-12">
+        <Hero />
+        
+        <div className="max-w-4xl mx-auto">
+          <ImageUpload 
+            onUpload={handlePrediction}
+            isLoading={isLoading}
+            onReset={handleReset}
+            disabled={isLoading}
+          />
+
+          {error && (
+            <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+              <p className="text-red-700 text-center">{error}</p>
+            </div>
+          )}
+
+          {currentPrediction && (
+            <div className="mt-8">
+              <PredictionResult prediction={currentPrediction} />
+            </div>
+          )}
+
+          {predictions.length > 0 && (
+            <div className="mt-12">
+              <PredictionHistory predictions={predictions} />
+            </div>
+          )}
+        </div>
+      </main>
+
+      <Footer />
     </div>
   );
 };
