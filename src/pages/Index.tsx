@@ -69,7 +69,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
       <Header />
       
       <main className="container mx-auto px-4 py-8 space-y-12">
@@ -84,8 +84,8 @@ const Index = () => {
           />
 
           {error && (
-            <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-red-700 text-center">{error}</p>
+            <div className="mt-6 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
+              <p className="text-destructive text-center">{error}</p>
             </div>
           )}
 
