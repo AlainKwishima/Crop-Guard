@@ -4,109 +4,112 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-muted/50 via-background to-muted/30 border-t border-border mt-20">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="neural-network-bg border-t border-primary/30 mt-20 relative overflow-hidden">
+      <div className="absolute inset-0 circuit-pattern opacity-20"></div>
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-gradient-to-br from-primary to-primary/80 rounded-xl shadow-lg">
-                <Shield className="h-6 w-6 text-primary-foreground" />
+            <div className="flex items-center space-x-4 mb-8">
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-sm shadow-lg animate-pulse-cyber">
+                <Shield className="h-8 w-8 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="text-xl font-bold gradient-text">CropGuard AI</h3>
-                <p className="text-muted-foreground text-sm">Intelligent Crop Protection</p>
+                <h3 className="text-2xl font-black gradient-text text-cyber tracking-wider">CROPGUARD</h3>
+                <p className="text-primary text-sm font-bold text-cyber">NEURAL INTELLIGENCE SYSTEM</p>
               </div>
             </div>
-            <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
-              Revolutionary AI-powered crop monitoring for modern agriculture. Protect your harvests with cutting-edge disease detection technology.
+            <p className="text-muted-foreground mb-8 max-w-md leading-relaxed text-neural">
+              &gt; QUANTUM-ENHANCED AGRICULTURAL SURVEILLANCE &lt;<br/>
+              Revolutionary AI-powered crop monitoring for planetary-scale operations. Protect harvests with next-generation threat detection protocols.
             </p>
-            <div className="flex items-center space-x-2 text-muted-foreground">
-              <span>Built with</span>
-              <Heart className="h-4 w-4 text-red-500 animate-pulse" />
-              <span>for sustainable farming</span>
+            <div className="flex items-center space-x-3 text-muted-foreground text-neural">
+              <span>ENGINEERED WITH</span>
+              <Heart className="h-5 w-5 text-accent animate-glow" />
+              <span>FOR SUSTAINABLE ECOSYSTEMS</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation Matrix */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Platform</h4>
-            <nav className="space-y-2">
-              <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">
-                Home
+            <h4 className="text-lg font-bold mb-6 text-cyber text-primary">PLATFORM</h4>
+            <nav className="space-y-3">
+              <Link to="/" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; HOME
               </Link>
-              <Link to="/about" className="block text-muted-foreground hover:text-primary transition-colors">
-                About Us
+              <Link to="/about" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; ABOUT SYSTEM
               </Link>
-              <Link to="/guide" className="block text-muted-foreground hover:text-primary transition-colors">
-                How to Use
+              <Link to="/guide" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; NEURAL GUIDE
               </Link>
-              <Link to="/pricing" className="block text-muted-foreground hover:text-primary transition-colors">
-                Pricing
+              <Link to="/pricing" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; PRICING MATRIX
               </Link>
             </nav>
           </div>
 
-          {/* Resources */}
+          {/* Resource Network */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <nav className="space-y-2">
-              <Link to="/faq" className="block text-muted-foreground hover:text-primary transition-colors">
-                FAQ
+            <h4 className="text-lg font-bold mb-6 text-cyber text-accent">RESOURCES</h4>
+            <nav className="space-y-3">
+              <Link to="/faq" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; FAQ DATABASE
               </Link>
-              <Link to="/community" className="block text-muted-foreground hover:text-primary transition-colors">
-                Community
+              <Link to="/community" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; NEURAL NETWORK
               </Link>
-              <Link to="/contact" className="block text-muted-foreground hover:text-primary transition-colors">
-                Contact
+              <Link to="/contact" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; CONTACT PROTOCOL
               </Link>
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
-                Documentation
+              <a href="#" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
+                &gt; DOCUMENTATION
               </a>
             </nav>
           </div>
 
-          {/* Contact Info */}
+          {/* Communication Hub */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact & Social</h4>
-            <div className="space-y-3 mb-4">
-              <div className="flex items-center space-x-3 text-muted-foreground">
-                <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">hello@cropguard.ai</span>
+            <h4 className="text-lg font-bold mb-6 text-cyber text-primary">COMMUNICATION</h4>
+            <div className="space-y-4 mb-6">
+              <div className="flex items-center space-x-3 text-muted-foreground text-neural">
+                <Mail className="h-5 w-5 text-primary animate-pulse" />
+                <span className="text-sm">neural@cropguard.ai</span>
               </div>
-              <div className="flex items-center space-x-3 text-muted-foreground">
-                <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm">+1 (555) 123-CROP</span>
+              <div className="flex items-center space-x-3 text-muted-foreground text-neural">
+                <Phone className="h-5 w-5 text-primary animate-pulse" />
+                <span className="text-sm">+1 (555) 123-CYBER</span>
               </div>
             </div>
             <div className="flex space-x-3">
-              <a href="#" className="p-2 bg-muted hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors">
-                <Github className="h-4 w-4" />
+              <a href="#" className="p-3 cyber-glass hover:bg-primary hover:text-primary-foreground rounded-sm transition-all duration-300 animate-pulse-cyber">
+                <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-muted hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors">
-                <Twitter className="h-4 w-4" />
+              <a href="#" className="p-3 cyber-glass hover:bg-accent hover:text-primary-foreground rounded-sm transition-all duration-300 animate-pulse-cyber">
+                <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 bg-muted hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors">
-                <Linkedin className="h-4 w-4" />
+              <a href="#" className="p-3 cyber-glass hover:bg-primary hover:text-primary-foreground rounded-sm transition-all duration-300 animate-pulse-cyber">
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-border">
+        <div className="mt-12 pt-8 border-t border-primary/30 data-stream">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm">
-              &copy; 2024 CropGuard AI. All rights reserved. Protecting crops with intelligent technology.
+            <p className="text-muted-foreground text-sm text-neural">
+              &copy; 2024 CROPGUARD NEURAL INTELLIGENCE. ALL PROTOCOLS RESERVED.<br/>
+              SECURING AGRICULTURAL ECOSYSTEMS WITH QUANTUM AI TECHNOLOGY.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                Privacy Policy
+            <div className="flex space-x-8 mt-6 md:mt-0">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-all duration-300 text-xs text-cyber hover:translate-y-[-2px]">
+                PRIVACY PROTOCOL
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                Terms of Service
+              <a href="#" className="text-muted-foreground hover:text-accent transition-all duration-300 text-xs text-cyber hover:translate-y-[-2px]">
+                SERVICE TERMS
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                Cookies
+              <a href="#" className="text-muted-foreground hover:text-primary transition-all duration-300 text-xs text-cyber hover:translate-y-[-2px]">
+                DATA MATRIX
               </a>
             </div>
           </div>

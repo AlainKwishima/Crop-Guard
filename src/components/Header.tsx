@@ -21,18 +21,18 @@ export const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-background/95 backdrop-blur-lg border-b border-border sticky top-0 z-50 shadow-sm">
+    <header className="cyber-glass border-b border-primary/30 sticky top-0 z-50 data-stream">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="p-2 bg-gradient-to-br from-primary to-primary/80 rounded-xl shadow-lg">
-              <Shield className="h-7 w-7 text-primary-foreground" />
+          <Link to="/" className="flex items-center space-x-4 hover:opacity-90 transition-all duration-300 group">
+            <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-sm shadow-lg animate-pulse-cyber group-hover:animate-glow">
+              <Shield className="h-8 w-8 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold gradient-text">
-                CropGuard AI
+              <h1 className="text-3xl font-black gradient-text text-cyber tracking-wider">
+                CROPGUARD
               </h1>
-              <p className="text-sm text-muted-foreground font-medium">Intelligent Crop Protection</p>
+              <p className="text-xs text-primary font-bold text-cyber">NEURAL INTELLIGENCE SYSTEM</p>
             </div>
           </Link>
           
@@ -40,20 +40,21 @@ export const Header = () => {
           <div className="hidden lg:flex items-center space-x-6">
             <nav className="flex items-center space-x-6">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 ${
-                    isActive(item.href)
-                      ? 'text-primary'
-                      : 'text-foreground hover:text-primary'
-                  }`}
-                >
-                  {item.name}
-                  {isActive(item.href) && (
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full" />
-                  )}
-                </Link>
+                 <Link
+                   key={item.name}
+                   to={item.href}
+                   className={`relative px-4 py-2 text-sm font-bold transition-all duration-300 text-cyber hover:text-primary group ${
+                     isActive(item.href)
+                       ? 'text-primary'
+                       : 'text-foreground hover:text-primary'
+                   }`}
+                 >
+                   {item.name}
+                   {isActive(item.href) && (
+                     <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full animate-glow" />
+                   )}
+                   <div className="absolute inset-0 bg-primary/10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                 </Link>
               ))}
             </nav>
             <ThemeToggle />

@@ -3,45 +3,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Enhanced design system with semantic tokens */
+/* Futuristic Sci-Fi Design System */
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  --background: 220 27% 4%;
+  --foreground: 180 100% 90%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card: 220 27% 6%;
+  --card-foreground: 180 100% 90%;
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
+  --popover: 220 27% 8%;
+  --popover-foreground: 180 100% 90%;
 
-  --primary: 142 71% 45%;
-  --primary-foreground: 0 0% 98%;
+  --primary: 190 100% 50%;
+  --primary-foreground: 220 27% 4%;
+  --primary-glow: 190 100% 70%;
 
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 240 100% 15%;
+  --secondary-foreground: 180 100% 90%;
 
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 220 27% 10%;
+  --muted-foreground: 180 50% 60%;
 
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --accent: 280 100% 50%;
+  --accent-foreground: 220 27% 4%;
 
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: 0 100% 60%;
+  --destructive-foreground: 220 27% 4%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 142 71% 45%;
+  --border: 220 27% 15%;
+  --input: 220 27% 12%;
+  --ring: 190 100% 50%;
 
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 
-  /* Enhanced gradients for premium feel */
-  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(142 71% 55%));
-  --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+  /* Futuristic Sci-Fi gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  --gradient-cyber: linear-gradient(45deg, hsl(190 100% 50%), hsl(280 100% 50%), hsl(190 100% 50%));
+  --gradient-neural: conic-gradient(from 0deg, hsl(190 100% 50%), hsl(280 100% 50%), hsl(190 100% 50%));
+  --gradient-hologram: linear-gradient(135deg, 
+    hsl(190 100% 50% / 0.1), 
+    hsl(280 100% 50% / 0.1), 
+    hsl(190 100% 50% / 0.1));
   
-  /* Custom shadows with primary color */
-  --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
-  --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+  /* Futuristic shadows and glows */
+  --shadow-cyber: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.3);
+  --shadow-neural: 0 0 30px hsl(var(--accent) / 0.4), inset 0 0 20px hsl(var(--primary) / 0.1);
+  --shadow-hologram: 0 8px 32px hsl(var(--primary) / 0.3), 0 0 0 1px hsl(var(--primary) / 0.2);
+  --glow-pulse: 0 0 20px hsl(var(--primary) / 0.6);
+  --glow-strong: 0 0 40px hsl(var(--primary) / 0.8), 0 0 80px hsl(var(--primary) / 0.4);
 
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 240 5.3% 26.1%;
@@ -53,38 +62,44 @@
   --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
-.dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
+.light {
+  --background: 200 20% 98%;
+  --foreground: 220 27% 10%;
 
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
+  --card: 200 20% 95%;
+  --card-foreground: 220 27% 10%;
 
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 200 20% 98%;
+  --popover-foreground: 220 27% 10%;
 
-  --primary: 142 71% 45%;
-  --primary-foreground: 0 0% 98%;
+  --primary: 190 100% 45%;
+  --primary-foreground: 200 20% 98%;
+  --primary-glow: 190 100% 60%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 200 20% 90%;
+  --secondary-foreground: 220 27% 10%;
 
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
+  --muted: 200 20% 92%;
+  --muted-foreground: 220 20% 40%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 280 100% 45%;
+  --accent-foreground: 200 20% 98%;
 
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 200 20% 98%;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 142 71% 45%;
+  --border: 200 20% 85%;
+  --input: 200 20% 90%;
+  --ring: 190 100% 45%;
 
-  /* Dark mode gradients */
-  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(142 71% 55%));
-  --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+  /* Light mode cyber gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  --gradient-cyber: linear-gradient(45deg, hsl(190 100% 45%), hsl(280 100% 45%), hsl(190 100% 45%));
+  --gradient-neural: conic-gradient(from 0deg, hsl(190 100% 45%), hsl(280 100% 45%), hsl(190 100% 45%));
+  --gradient-hologram: linear-gradient(135deg, 
+    hsl(190 100% 45% / 0.1), 
+    hsl(280 100% 45% / 0.1), 
+    hsl(190 100% 45% / 0.1));
   
   --sidebar-background: 240 5.9% 10%;
   --sidebar-foreground: 240 4.8% 95.9%;
@@ -104,18 +119,26 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Orbitron', 'JetBrains Mono', 'Fira Code', monospace, system-ui;
     line-height: 1.6;
+    background-image: 
+      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(var(--accent) / 0.05) 0%, transparent 50%),
+      linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    line-height: 1.3;
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.3);
   }
 }
 
 @layer utilities {
-  /* Enhanced animation system */
+  /* Futuristic Animation System */
   .animate-fade-in {
     animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
@@ -138,6 +161,26 @@
 
   .animate-bounce-subtle {
     animation: bounceSubtle 2s ease-in-out infinite;
+  }
+
+  .animate-pulse-cyber {
+    animation: pulseCyber 2s ease-in-out infinite;
+  }
+
+  .animate-neural-network {
+    animation: neuralNetwork 4s ease-in-out infinite;
+  }
+
+  .animate-hologram {
+    animation: hologram 3s ease-in-out infinite;
+  }
+
+  .animate-data-stream {
+    animation: dataStream 2s linear infinite;
+  }
+
+  .animate-matrix {
+    animation: matrix 20s linear infinite;
   }
 
   @keyframes fadeIn {
@@ -200,38 +243,145 @@
     }
   }
 
-  /* Enhanced interactive effects */
+  @keyframes pulseCyber {
+    0%, 100% {
+      box-shadow: var(--shadow-cyber);
+      border-color: hsl(var(--primary) / 0.5);
+    }
+    50% {
+      box-shadow: var(--glow-strong);
+      border-color: hsl(var(--primary));
+    }
+  }
+
+  @keyframes neuralNetwork {
+    0%, 100% {
+      background-position: 0% 50%;
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      background-position: 100% 50%;
+      filter: hue-rotate(90deg);
+    }
+  }
+
+  @keyframes hologram {
+    0%, 100% {
+      transform: translateY(0px) rotateX(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(-2px) rotateX(1deg);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translateY(2px) rotateX(-1deg);
+      opacity: 0.9;
+    }
+  }
+
+  @keyframes dataStream {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes matrix {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+  /* Futuristic Interactive Effects */
   .hover-scale {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hover-scale:hover {
     transform: scale(1.02) translateY(-2px);
-    box-shadow: var(--shadow-primary);
+    box-shadow: var(--shadow-cyber);
   }
 
-  .glass-effect {
+  .cyber-glass {
     backdrop-filter: blur(16px) saturate(180%);
-    background: hsl(var(--background) / 0.8);
-    border: 1px solid hsl(var(--border) / 0.5);
+    background: hsl(var(--card) / 0.8);
+    border: 1px solid hsl(var(--primary) / 0.3);
+    box-shadow: var(--shadow-hologram);
+  }
+
+  .neural-glass {
+    backdrop-filter: blur(20px) saturate(200%);
+    background: linear-gradient(135deg, 
+      hsl(var(--card) / 0.7), 
+      hsl(var(--card) / 0.3));
+    border: 1px solid hsl(var(--primary) / 0.5);
+    box-shadow: var(--shadow-neural);
   }
 
   .gradient-text {
-    background: var(--gradient-primary);
+    background: var(--gradient-cyber);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: neuralNetwork 4s ease-in-out infinite;
   }
 
-  .gradient-border {
+  .cyber-border {
+    position: relative;
     background: var(--gradient-primary);
     border-radius: var(--radius);
     padding: 2px;
+    overflow: hidden;
   }
 
-  .gradient-border > * {
+  .cyber-border:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-neural);
+    border-radius: var(--radius);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .cyber-border:hover:before {
+    opacity: 1;
+  }
+
+  .cyber-border > * {
+    position: relative;
     background: hsl(var(--background));
     border-radius: calc(var(--radius) - 2px);
+  }
+
+  .hologram-effect {
+    background: var(--gradient-hologram);
+    background-size: 200% 200%;
+    animation: hologram 3s ease-in-out infinite;
+    border: 1px solid hsl(var(--primary) / 0.4);
+  }
+
+  .data-stream {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .data-stream:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);
+    animation: dataStream 2s ease-in-out infinite;
   }
 
   .scrollbar-hide {
@@ -243,27 +393,103 @@
     display: none;
   }
 
-  /* Particle effect for background */
-  .particle-bg {
+  /* Futuristic Background Effects */
+  .neural-network-bg {
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(var(--primary) / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 30%, hsl(var(--primary) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--accent) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
+      linear-gradient(135deg, transparent 0%, hsl(var(--primary) / 0.05) 50%, transparent 100%);
+    background-size: 800px 800px, 600px 600px, 400px 400px, 100% 100%;
+    animation: matrix 20s linear infinite;
+  }
+
+  .circuit-pattern {
+    background-image: 
+      linear-gradient(0deg, transparent 24%, hsl(var(--primary) / 0.1) 25%, hsl(var(--primary) / 0.1) 26%, transparent 27%, transparent 74%, hsl(var(--primary) / 0.1) 75%, hsl(var(--primary) / 0.1) 76%, transparent 77%),
+      linear-gradient(90deg, transparent 24%, hsl(var(--primary) / 0.1) 25%, hsl(var(--primary) / 0.1) 26%, transparent 27%, transparent 74%, hsl(var(--primary) / 0.1) 75%, hsl(var(--primary) / 0.1) 76%, transparent 77%);
+    background-size: 50px 50px;
+  }
+
+  .matrix-rain {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .matrix-rain:before {
+    content: '01001001 01101101 01100001 01100111 01101001 01101110 01100101';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    color: hsl(var(--primary) / 0.3);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 20px;
+    animation: dataStream 10s linear infinite;
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 }
 
-/* Enhanced focus styles for accessibility */
+/* Futuristic Component Styles */
 @layer components {
-  .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200;
+  .cyber-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background transition-all duration-200;
   }
 
-  .btn-primary {
-    @apply bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 focus-ring;
+  .btn-cyber {
+    @apply relative bg-gradient-to-r from-primary to-accent hover:to-accent text-primary-foreground font-bold px-6 py-3 rounded-sm uppercase tracking-wider transition-all duration-300 cyber-focus;
+    box-shadow: var(--shadow-cyber);
+    border: 1px solid hsl(var(--primary) / 0.5);
+    font-family: 'Orbitron', monospace;
   }
 
-  .card-hover {
-    @apply hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  .btn-cyber:hover {
+    box-shadow: var(--glow-strong);
+    transform: translateY(-2px);
+  }
+
+  .btn-cyber:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, transparent 30%, hsl(var(--primary) / 0.1) 50%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-cyber:hover:before {
+    opacity: 1;
+  }
+
+  .card-cyber {
+    @apply cyber-glass hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-pulse-cyber data-stream;
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+
+  .card-neural {
+    @apply neural-glass transition-all duration-500 hover:scale-105;
+    animation: hologram 3s ease-in-out infinite;
+  }
+
+  .text-cyber {
+    font-family: 'Orbitron', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  .text-neural {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--gradient-neural);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: neuralNetwork 4s ease-in-out infinite;
   }
 }
 
@@ -278,11 +504,20 @@ html {
   color: inherit;
 }
 
-/* Loading states */
-.loading-shimmer {
-  background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+/* Futuristic Loading States */
+.cyber-shimmer {
+  background: linear-gradient(90deg, 
+    hsl(var(--card)) 25%, 
+    hsl(var(--primary) / 0.2) 37%, 
+    hsl(var(--card)) 63%);
   background-size: 400% 100%;
   animation: shimmer 1.5s ease-in-out infinite;
+}
+
+.neural-loading {
+  background: var(--gradient-neural);
+  background-size: 400% 400%;
+  animation: neuralNetwork 2s ease-in-out infinite;
 }
 
 @keyframes shimmer {

@@ -69,13 +69,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
+    <div className="min-h-screen neural-network-bg matrix-rain">
       <Header />
       
-      <main className="container mx-auto px-4 py-8 space-y-12">
+      <main className="container mx-auto px-4 py-8 space-y-16 relative z-10">
         <Hero />
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <ImageUpload 
             onUpload={handlePrediction}
             isLoading={isLoading}
@@ -84,19 +84,19 @@ const Index = () => {
           />
 
           {error && (
-            <div className="mt-6 p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
-              <p className="text-destructive text-center">{error}</p>
+            <div className="mt-8 p-6 cyber-glass border border-destructive/50 rounded-sm animate-pulse-cyber">
+              <p className="text-destructive text-center font-bold text-cyber">[ERROR] {error}</p>
             </div>
           )}
 
           {currentPrediction && (
-            <div className="mt-8">
+            <div className="mt-12">
               <PredictionResult prediction={currentPrediction} />
             </div>
           )}
 
           {predictions.length > 0 && (
-            <div className="mt-12">
+            <div className="mt-16">
               <PredictionHistory predictions={predictions} />
             </div>
           )}
