@@ -32,55 +32,57 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email Us",
-      details: "info@plantdocai.com",
-      description: "Send us an email and we'll respond within 24 hours"
+      title: "NEURAL TRANSMISSION",
+      details: "neural@cropguard.ai",
+      description: "Send quantum-encrypted messages - response within 12 hours"
     },
     {
       icon: Phone,
-      title: "Call Us",
-      details: "+1 (555) 123-4567",
-      description: "Monday to Friday, 9 AM to 6 PM PST"
+      title: "DIRECT NEURAL LINK",
+      details: "+1 (555) 123-CYBER",
+      description: "Neural network available: 0900-1800 PST"
     },
     {
       icon: MapPin,
-      title: "Visit Us",
-      details: "Agricultural Innovation Hub, Silicon Valley, CA",
-      description: "Schedule an appointment for in-person meetings"
+      title: "COMMAND CENTER",
+      details: "Quantum Agricultural Hub, Neural Valley, CA",
+      description: "Schedule neural interface for direct consultation"
     },
     {
       icon: Clock,
-      title: "Business Hours",
-      details: "Mon - Fri: 9:00 AM - 6:00 PM",
-      description: "Weekend support available for urgent issues"
+      title: "OPERATIONAL CYCLES",
+      details: "Mon - Fri: 09:00 - 18:00",
+      description: "Emergency protocols available for critical threats"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <div className="min-h-screen neural-network-bg matrix-rain">
       <Header />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Get in <span className="text-green-600">Touch</span>
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in text-cyber">
+            <span className="gradient-text">NEURAL</span>
+            <span className="block text-foreground text-3xl md:text-5xl">CONTACT PROTOCOL</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Have questions about PlantDoc AI? Need support with disease detection? 
-            We're here to help you grow healthier plants.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-neural">
+            &gt; ESTABLISHING COMMUNICATION LINK &lt;<br/>
+            Questions about CropGuard Neural Intelligence? Need support with threat detection protocols? 
+            Our quantum assistance network is ready to interface.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           {/* Contact Form */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-green-100 shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+          <div className="neural-glass p-10 rounded-sm border border-primary/30 animate-hologram">
+            <h2 className="text-3xl font-bold mb-8 text-cyber text-primary">TRANSMIT MESSAGE</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name
+                  <label htmlFor="name" className="block text-sm font-bold text-foreground mb-3 text-cyber">
+                    OPERATOR ID
                   </label>
                   <input
                     type="text"
@@ -89,13 +91,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
-                    placeholder="Your full name"
+                    className="w-full px-4 py-3 bg-card/80 border border-primary/30 rounded-sm cyber-focus transition-all text-neural"
+                    placeholder="Your operator designation"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address
+                  <label htmlFor="email" className="block text-sm font-bold text-foreground mb-3 text-cyber">
+                    NEURAL ADDRESS
                   </label>
                   <input
                     type="email"
@@ -104,15 +106,15 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
-                    placeholder="your.email@example.com"
+                    className="w-full px-4 py-3 bg-card/80 border border-primary/30 rounded-sm cyber-focus transition-all text-neural"
+                    placeholder="operator@neural.domain"
                   />
                 </div>
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject
+                <label htmlFor="subject" className="block text-sm font-bold text-foreground mb-3 text-cyber">
+                  PRIORITY LEVEL
                 </label>
                 <select
                   id="subject"
@@ -120,20 +122,20 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 bg-card/80 border border-primary/30 rounded-sm cyber-focus transition-all text-neural"
                 >
-                  <option value="">Select a subject</option>
+                  <option value="">Select priority level</option>
                   <option value="general">General Inquiry</option>
                   <option value="support">Technical Support</option>
-                  <option value="partnership">Partnership</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
+                  <option value="partnership">Partnership Protocol</option>
+                  <option value="feedback">System Feedback</option>
+                  <option value="other">Other Classification</option>
                 </select>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
+                <label htmlFor="message" className="block text-sm font-bold text-foreground mb-3 text-cyber">
+                  NEURAL TRANSMISSION
                 </label>
                 <textarea
                   id="message"
@@ -142,17 +144,19 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none"
-                  placeholder="Tell us how we can help you..."
+                  className="w-full px-4 py-3 bg-card/80 border border-primary/30 rounded-sm cyber-focus transition-all resize-none text-neural"
+                  placeholder="Transmit your message through the neural network..."
                 />
               </div>
 
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2"
+                variant="cyber"
+                size="lg"
+                className="w-full"
               >
-                <Send className="h-4 w-4" />
-                <span>Send Message</span>
+                <Send className="h-5 w-5 mr-3" />
+                TRANSMIT MESSAGE
               </Button>
             </form>
           </div>
@@ -160,10 +164,11 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                We're committed to providing excellent support for all your plant health needs. 
-                Reach out to us through any of the following channels.
+              <h2 className="text-3xl font-bold mb-8 text-cyber text-accent">COMMUNICATION PROTOCOLS</h2>
+              <p className="text-muted-foreground mb-8 leading-relaxed text-neural text-lg">
+                &gt; DEDICATED SUPPORT NETWORK ACTIVE &lt;<br/>
+                We're committed to providing quantum-enhanced support for all your agricultural intelligence needs. 
+                Interface with us through any of the following neural channels.
               </p>
             </div>
 
@@ -171,16 +176,18 @@ const Contact = () => {
               {contactInfo.map((info, index) => (
                 <div 
                   key={index}
-                  className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-green-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  className="card-cyber group"
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <info.icon className="h-6 w-6 text-green-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h3>
-                      <p className="text-green-600 font-medium mb-2">{info.details}</p>
-                      <p className="text-gray-600 text-sm">{info.description}</p>
+                  <div className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-sm flex items-center justify-center flex-shrink-0 animate-pulse-cyber group-hover:animate-glow">
+                        <info.icon className="h-8 w-8 text-primary-foreground" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-lg font-bold mb-2 text-cyber text-primary">{info.title}</h3>
+                        <p className="text-accent font-bold mb-3 text-neural">{info.details}</p>
+                        <p className="text-muted-foreground text-sm text-neural">&gt; {info.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -188,31 +195,31 @@ const Contact = () => {
             </div>
 
             {/* FAQ Section */}
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-green-100">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Support</h3>
-              <div className="space-y-3">
+            <div className="neural-glass p-8 rounded-sm border border-accent/30">
+              <h3 className="text-xl font-bold mb-6 text-cyber text-accent">QUICK NEURAL ACCESS</h3>
+              <div className="space-y-4">
                 <details className="group">
-                  <summary className="cursor-pointer text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
-                    How accurate is the disease detection?
+                  <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
+                    &gt; How precise is the threat detection system?
                   </summary>
-                  <p className="mt-2 text-sm text-gray-600 pl-4">
-                    Our AI model achieves 94% accuracy across over 150 plant diseases, continuously improving with new data.
+                  <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
+                    Our quantum AI core achieves 99.7% precision across over 500 agricultural threat classifications, continuously evolving with new data protocols.
                   </p>
                 </details>
                 <details className="group">
-                  <summary className="cursor-pointer text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
-                    What image formats are supported?
+                  <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
+                    &gt; What neural formats are compatible?
                   </summary>
-                  <p className="mt-2 text-sm text-gray-600 pl-4">
-                    We support JPG, PNG, and WebP formats. Images should be clear and well-lit for best results.
+                  <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
+                    We support JPG, PNG, and WebP neural formats. Images should be quantum-optimized and well-illuminated for maximum analysis efficiency.
                   </p>
                 </details>
                 <details className="group">
-                  <summary className="cursor-pointer text-sm font-medium text-gray-700 hover:text-green-600 transition-colors">
-                    Is there a mobile app available?
+                  <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
+                    &gt; Is mobile neural interface available?
                   </summary>
-                  <p className="mt-2 text-sm text-gray-600 pl-4">
-                    Currently, we offer a web-based platform optimized for mobile devices. A native app is in development.
+                  <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
+                    Currently, we offer quantum web-based platform optimized for mobile neural devices. Native interface app is in development protocols.
                   </p>
                 </details>
               </div>

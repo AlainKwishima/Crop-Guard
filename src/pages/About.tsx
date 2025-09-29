@@ -7,121 +7,129 @@ const About = () => {
   const features = [
     {
       icon: Brain,
-      title: "AI-Powered Detection",
-      description: "Advanced machine learning algorithms trained on thousands of plant disease images."
+      title: "QUANTUM AI CORE",
+      description: "Neural networks trained on petabytes of agricultural data using quantum computing protocols."
     },
     {
       icon: Microscope,
-      title: "Scientific Accuracy",
-      description: "Developed in collaboration with agricultural experts and plant pathologists."
+      title: "SCIENTIFIC PRECISION",
+      description: "Developed with agricultural quantum researchers and xenobotany specialists."
     },
     {
       icon: Globe,
-      title: "Global Impact",
-      description: "Supporting farmers worldwide in maintaining healthy crops and reducing losses."
+      title: "PLANETARY IMPACT",
+      description: "Supporting farming operations across multiple biomes and agricultural zones worldwide."
     }
   ];
 
   const team = [
     {
       name: "Dr. Sarah Chen",
-      role: "Chief AI Researcher",
-      bio: "PhD in Plant Pathology with 15+ years in agricultural AI development."
+      role: "Chief Neural Architect",
+      bio: "PhD in Quantum Agriculture with 15+ years developing AI consciousness for crop analysis.",
+      code: "SC"
     },
     {
       name: "Michael Rodriguez",
-      role: "Lead Developer",
-      bio: "Full-stack engineer specializing in machine learning applications."
+      role: "Lead Systems Engineer",
+      bio: "Full-stack quantum engineer specializing in neural machine learning applications.",
+      code: "MR"
     },
     {
       name: "Dr. James Wilson",
-      role: "Agricultural Advisor",
-      bio: "Former agricultural extension specialist with expertise in crop diseases."
+      role: "Agricultural Intelligence Advisor", 
+      bio: "Former agricultural quantum specialist with expertise in xenobotanical threat analysis.",
+      code: "JW"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <div className="min-h-screen neural-network-bg matrix-rain">
       <Header />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
-            <div className="p-4 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl shadow-xl">
-              <Leaf className="h-12 w-12 text-white" />
+        <div className="text-center mb-20">
+          <div className="flex justify-center mb-8">
+            <div className="p-6 bg-gradient-to-br from-primary to-accent rounded-sm shadow-lg animate-pulse-cyber">
+              <Leaf className="h-16 w-16 text-primary-foreground" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            About <span className="text-green-600">PlantDoc AI</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in text-cyber">
+            <span className="gradient-text">ABOUT CROPGUARD</span>
+            <span className="block text-foreground text-3xl md:text-5xl">NEURAL INTELLIGENCE</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We're on a mission to revolutionize agriculture through artificial intelligence, 
-            helping farmers and plant enthusiasts detect diseases early and maintain healthier crops.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-neural">
+            &gt; MISSION PROTOCOL ACTIVE &lt;<br/>
+            We're engineering the future of agriculture through quantum artificial intelligence, 
+            enabling farmers and agricultural operators to detect threats before they manifest and maintain optimal crop health across planetary operations.
           </p>
         </div>
 
         {/* Mission Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3 mb-4">
-              <Target className="h-8 w-8 text-green-600" />
-              <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+          <div className="space-y-8">
+            <div className="flex items-center space-x-4 mb-6">
+              <Target className="h-10 w-10 text-primary animate-glow" />
+              <h2 className="text-4xl font-bold text-cyber text-primary">MISSION DIRECTIVE</h2>
             </div>
-            <p className="text-gray-600 leading-relaxed">
-              Plant diseases cause billions of dollars in crop losses annually. Our AI-powered platform 
-              democratizes access to expert plant disease diagnosis, enabling early detection and treatment 
-              that can save entire harvests.
+            <p className="text-muted-foreground leading-relaxed text-neural text-lg">
+              &gt; AGRICULTURAL THREAT ANALYSIS INITIATED &lt;<br/>
+              Plant diseases cause trillions in crop losses across global operations annually. Our quantum AI platform 
+              democratizes access to expert plant disease diagnosis, enabling early threat detection and neutralization 
+              protocols that can preserve entire harvests.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              By combining cutting-edge computer vision with agricultural expertise, we're making 
-              professional-grade plant health assessment accessible to farmers of all sizes, from 
-              backyard gardeners to large-scale agricultural operations.
+            <p className="text-muted-foreground leading-relaxed text-neural text-lg">
+              &gt; QUANTUM VISION PROTOCOLS ACTIVE &lt;<br/>
+              By combining advanced quantum computer vision with agricultural intelligence networks, we're making 
+              professional-grade plant health assessment accessible to farming operations of all scales, from 
+              micro-gardens to mega-scale agricultural installations.
             </p>
           </div>
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-green-100 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Impact Statistics</h3>
-            <div className="space-y-4">
+          <div className="neural-glass p-10 rounded-sm border border-primary/30 animate-hologram">
+            <h3 className="text-3xl font-bold mb-8 text-cyber text-accent">IMPACT METRICS</h3>
+            <div className="space-y-6">
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">Images Analyzed</span>
-                <span className="text-2xl font-bold text-green-600">500K+</span>
+                <span className="text-muted-foreground text-neural">NEURAL ANALYSES</span>
+                <span className="text-3xl font-black text-primary gradient-text">2.5M+</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">Diseases Detected</span>
-                <span className="text-2xl font-bold text-green-600">150+</span>
+                <span className="text-muted-foreground text-neural">THREATS DETECTED</span>
+                <span className="text-3xl font-black text-accent gradient-text">500+</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">Farmers Helped</span>
-                <span className="text-2xl font-bold text-green-600">25K+</span>
+                <span className="text-muted-foreground text-neural">OPERATORS ENHANCED</span>
+                <span className="text-3xl font-black text-primary gradient-text">100K+</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">Accuracy Rate</span>
-                <span className="text-2xl font-bold text-green-600">94%</span>
+                <span className="text-muted-foreground text-neural">ACCURACY RATE</span>
+                <span className="text-3xl font-black text-accent gradient-text">99.7%</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Features Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose PlantDoc AI?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our platform combines advanced technology with agricultural expertise to deliver 
-              accurate, actionable insights for plant health management.
+        <div className="mb-24">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6 text-cyber text-primary">WHY CHOOSE NEURAL INTELLIGENCE?</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-neural text-lg">
+              &gt; QUANTUM TECHNOLOGY MATRIX ENGAGED &lt;<br/>
+              Our platform combines advanced quantum technology with agricultural intelligence networks to deliver 
+              precise, actionable insights for plant health optimization protocols.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-green-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="card-neural p-8 group"
               >
-                <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-                  <feature.icon className="h-7 w-7 text-green-600" />
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-sm flex items-center justify-center mb-6 animate-pulse-cyber group-hover:animate-glow">
+                  <feature.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold mb-4 text-cyber text-primary">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-neural">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -129,30 +137,31 @@ const About = () => {
 
         {/* Team Section */}
         <div className="mb-16">
-          <div className="text-center mb-12">
-            <div className="flex justify-center mb-4">
-              <Users className="h-8 w-8 text-green-600" />
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-6">
+              <Users className="h-10 w-10 text-accent animate-glow" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our diverse team of AI researchers, developers, and agricultural experts 
-              work together to advance plant health technology.
+            <h2 className="text-4xl font-bold mb-6 text-cyber text-accent">NEURAL TEAM MATRIX</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-neural text-lg">
+              &gt; INTELLIGENCE COLLECTIVE ASSEMBLED &lt;<br/>
+              Our diverse team of quantum AI researchers, neural engineers, and agricultural intelligence specialists 
+              work in synchronization to advance plant health technology protocols.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div 
                 key={index}
-                className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-green-100 text-center hover:shadow-lg transition-all duration-300"
+                className="card-cyber text-center p-8 group"
               >
-                <div className="w-20 h-20 bg-gradient-to-br from-green-600 to-emerald-700 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-xl font-bold">
-                    {member.name.split(' ').map(n => n[0]).join('')}
+                <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-sm mx-auto mb-6 flex items-center justify-center animate-pulse-cyber group-hover:animate-glow">
+                  <span className="text-primary-foreground text-2xl font-black text-cyber">
+                    {member.code}
                   </span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-green-600 font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
+                <h3 className="text-xl font-bold mb-3 text-cyber text-primary">{member.name}</h3>
+                <p className="text-accent font-bold mb-4 text-cyber">{member.role}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed text-neural">{member.bio}</p>
               </div>
             ))}
           </div>

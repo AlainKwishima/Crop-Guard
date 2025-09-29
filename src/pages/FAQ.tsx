@@ -48,48 +48,52 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
+    <div className="min-h-screen neural-network-bg matrix-rain">
       <Header />
       
-      <main className="container mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Frequently Asked
-            <span className="gradient-text block">Questions</span>
+      <main className="container mx-auto px-4 py-16 relative z-10">
+        <div className="text-center mb-20">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in text-cyber">
+            <span className="gradient-text">NEURAL FAQ</span>
+            <span className="block text-foreground text-3xl md:text-5xl">DATABASE</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Everything you need to know about CropGuard AI and how it can help protect your crops.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-neural">
+            &gt; ACCESSING KNOWLEDGE MATRIX &lt;<br/>
+            Everything you need to interface with CropGuard's quantum intelligence protocols.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-5xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-border rounded-lg px-6 hover:shadow-md transition-all duration-300"
+                className="cyber-border animate-pulse-cyber group data-stream"
               >
-                <AccordionTrigger className="text-left text-lg font-medium py-6 hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
+                <div className="cyber-glass p-6 rounded-sm">
+                  <AccordionTrigger className="text-left text-lg font-bold py-6 hover:no-underline text-cyber text-primary group-hover:text-accent transition-all duration-300">
+                    &gt; {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-6 leading-relaxed text-neural">
+                    {faq.answer}
+                  </AccordionContent>
+                </div>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-muted/50 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
-            <p className="text-muted-foreground mb-6">
-              Our support team is here to help you get the most out of CropGuard AI.
+        <div className="mt-20 text-center">
+          <div className="neural-glass p-10 rounded-sm max-w-3xl mx-auto animate-hologram">
+            <h3 className="text-3xl font-bold mb-6 text-cyber text-primary">STILL NEED ASSISTANCE?</h3>
+            <p className="text-muted-foreground mb-8 text-neural text-lg">
+              &gt; OUR SUPPORT NEURAL NETWORK IS STANDING BY &lt;<br/>
+              Connect with our quantum assistance protocols for maximum optimization.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="btn-primary">Contact Support</Button>
-              <Button variant="outline">Join Community</Button>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button variant="cyber" size="lg">CONTACT SUPPORT MATRIX</Button>
+              <Button variant="neural" size="lg">JOIN NEURAL NETWORK</Button>
             </div>
           </div>
         </div>
