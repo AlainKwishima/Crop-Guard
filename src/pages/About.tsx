@@ -1,24 +1,24 @@
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { Leaf, Target, Users, Award, Brain, Microscope, Globe } from 'lucide-react';
+import { Shield, Target, Users, Award, Brain, Lock, Globe } from 'lucide-react';
 
 const About = () => {
   const features = [
     {
       icon: Brain,
       title: "QUANTUM AI CORE",
-      description: "Neural networks trained on petabytes of agricultural data using quantum computing protocols."
+      description: "Neural networks trained on petabytes of security data using quantum computing protocols."
     },
     {
-      icon: Microscope,
-      title: "SCIENTIFIC PRECISION",
-      description: "Developed with agricultural quantum researchers and xenobotany specialists."
+      icon: Lock,
+      title: "ZERO-DAY PROTECTION",
+      description: "Developed with cybersecurity quantum researchers and threat intelligence specialists."
     },
     {
       icon: Globe,
-      title: "PLANETARY IMPACT",
-      description: "Supporting farming operations across multiple biomes and agricultural zones worldwide."
+      title: "PLANETARY DEFENSE",
+      description: "Supporting security operations across multiple networks and enterprise zones worldwide."
     }
   ];
 
@@ -52,17 +52,17 @@ const About = () => {
         <div className="text-center mb-20">
           <div className="flex justify-center mb-8">
             <div className="p-6 bg-gradient-to-br from-primary to-accent rounded-sm shadow-lg animate-pulse-cyber">
-              <Leaf className="h-16 w-16 text-primary-foreground" />
+              <Shield className="h-16 w-16 text-primary-foreground" />
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in text-cyber">
-            <span className="gradient-text">ABOUT CROPGUARD</span>
-            <span className="block text-foreground text-3xl md:text-5xl">NEURAL INTELLIGENCE</span>
+            <span className="gradient-text">ABOUT NEXUS SHIELD</span>
+            <span className="block text-foreground text-3xl md:text-5xl">NEURAL THREAT INTELLIGENCE</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-neural">
             &gt; MISSION PROTOCOL ACTIVE &lt;<br/>
-            We're engineering the future of agriculture through quantum artificial intelligence, 
-            enabling farmers and agricultural operators to detect threats before they manifest and maintain optimal crop health across planetary operations.
+            We're engineering the future of cybersecurity through quantum artificial intelligence, 
+            enabling organizations and security teams to detect threats before they manifest and maintain optimal security posture across enterprise operations.
           </p>
         </div>
 

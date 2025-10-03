@@ -15,18 +15,18 @@ export const Footer = () => {
                 <Shield className="h-8 w-8 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="text-2xl font-black gradient-text text-cyber tracking-wider">CROPGUARD</h3>
-                <p className="text-primary text-sm font-bold text-cyber">NEURAL INTELLIGENCE SYSTEM</p>
+                <h3 className="text-2xl font-black gradient-text text-cyber tracking-wider">NEXUS SHIELD</h3>
+                <p className="text-primary text-sm font-bold text-cyber">NEURAL THREAT INTELLIGENCE</p>
               </div>
             </div>
             <p className="text-muted-foreground mb-8 max-w-md leading-relaxed text-neural">
-              &gt; QUANTUM-ENHANCED AGRICULTURAL SURVEILLANCE &lt;<br/>
-              Revolutionary AI-powered crop monitoring for planetary-scale operations. Protect harvests with next-generation threat detection protocols.
+              &gt; QUANTUM-ENHANCED CYBERSECURITY PLATFORM &lt;<br/>
+              Revolutionary AI-powered threat detection for enterprise-scale operations. Protect digital infrastructure with next-generation security protocols.
             </p>
             <div className="flex items-center space-x-3 text-muted-foreground text-neural">
               <span>ENGINEERED WITH</span>
               <Heart className="h-5 w-5 text-accent animate-glow" />
-              <span>FOR SUSTAINABLE ECOSYSTEMS</span>
+              <span>FOR SECURE DIGITAL ECOSYSTEMS</span>
             </div>
           </div>
 
@@ -38,10 +38,10 @@ export const Footer = () => {
                 &gt; HOME
               </Link>
               <Link to="/about" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
-                &gt; ABOUT SYSTEM
+                &gt; ABOUT DEFENSE
               </Link>
               <Link to="/guide" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
-                &gt; NEURAL GUIDE
+                &gt; SECURITY GUIDE
               </Link>
               <Link to="/pricing" className="block text-muted-foreground hover:text-primary transition-all duration-300 text-neural hover:translate-x-1">
                 &gt; PRICING MATRIX
@@ -57,7 +57,7 @@ export const Footer = () => {
                 &gt; FAQ DATABASE
               </Link>
               <Link to="/community" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
-                &gt; NEURAL NETWORK
+                &gt; SECURITY NETWORK
               </Link>
               <Link to="/contact" className="block text-muted-foreground hover:text-accent transition-all duration-300 text-neural hover:translate-x-1">
                 &gt; CONTACT PROTOCOL
@@ -74,11 +74,11 @@ export const Footer = () => {
             <div className="space-y-4 mb-6">
               <div className="flex items-center space-x-3 text-muted-foreground text-neural">
                 <Mail className="h-5 w-5 text-primary animate-pulse" />
-                <span className="text-sm">neural@cropguard.ai</span>
+                <span className="text-sm">security@nexusshield.ai</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground text-neural">
                 <Phone className="h-5 w-5 text-primary animate-pulse" />
-                <span className="text-sm">+1 (555) 123-CYBER</span>
+                <span className="text-sm">+1 (555) 789-SECURE</span>
               </div>
             </div>
             <div className="flex space-x-3">
@@ -98,8 +98,8 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary/30 data-stream">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm text-neural">
-              &copy; 2024 CROPGUARD NEURAL INTELLIGENCE. ALL PROTOCOLS RESERVED.<br/>
-              SECURING AGRICULTURAL ECOSYSTEMS WITH QUANTUM AI TECHNOLOGY.
+              &copy; 2025 NEXUS SHIELD NEURAL INTELLIGENCE. ALL PROTOCOLS RESERVED.<br/>
+              SECURING DIGITAL ECOSYSTEMS WITH QUANTUM AI TECHNOLOGY.
             </p>
             <div className="flex space-x-8 mt-6 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-primary transition-all duration-300 text-xs text-cyber hover:translate-y-[-2px]">

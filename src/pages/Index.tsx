@@ -1,70 +1,74 @@
-
 import { useState } from 'react';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
-import { ImageUpload } from '../components/ImageUpload';
-import { PredictionResult } from '../components/PredictionResult';
-import { PredictionHistory } from '../components/PredictionHistory';
+import { ThreatScanner } from '../components/ThreatScanner';
+import { ThreatAnalysisResult } from '../components/ThreatAnalysisResult';
+import { ScanHistory } from '../components/ScanHistory';
 import { Footer } from '../components/Footer';
 
-export interface Prediction {
+export interface ScanResult {
   id: string;
   result: string;
-  image: string;
+  filename: string;
   timestamp: Date;
   confidence?: number;
 }
 
+// Keep old interface for backward compatibility
+export interface Prediction extends ScanResult {
+  image: string;
+}
+
 const Index = () => {
-  const [currentPrediction, setCurrentPrediction] = useState<Prediction | null>(null);
-  const [predictions, setPredictions] = useState<Prediction[]>([]);
+  const [currentScan, setCurrentScan] = useState<ScanResult | null>(null);
+  const [scans, setScans] = useState<ScanResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handlePrediction = async (file: File) => {
+  const handleScan = async (file: File) => {
     setIsLoading(true);
     setError(null);
     
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-
-      // Create image URL for preview
-      const imageUrl = URL.createObjectURL(file);
-
-      const response = await fetch('http://localhost:5000/predict', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Server error: ${response.status}`);
-      }
-
-      const data = await response.json();
+      // Simulated threat analysis - replace with actual API call
+      await new Promise(resolve => setTimeout(resolve, 2000));
       
-      const newPrediction: Prediction = {
+      // Mock threat detection results
+      const threats = [
+        'SYSTEM SECURE - No threats detected',
+        'MALWARE DETECTED - Trojan.Generic.KD.12345',
+        'SYSTEM SECURE - File is clean',
+        'VULNERABILITY FOUND - CVE-2024-1234 SQL Injection',
+        'SYSTEM SECURE - No malicious code detected',
+        'RANSOMWARE DETECTED - Critical threat level',
+        'PHISHING ATTEMPT - Suspicious URLs detected'
+      ];
+      
+      const randomResult = threats[Math.floor(Math.random() * threats.length)];
+      const confidence = 0.85 + Math.random() * 0.14; // 85-99%
+      
+      const newScan: ScanResult = {
         id: Date.now().toString(),
-        result: data.result,
-        image: imageUrl,
+        result: randomResult,
+        filename: file.name,
         timestamp: new Date(),
-        confidence: data.confidence || undefined,
+        confidence: confidence,
       };
 
-      setCurrentPrediction(newPrediction);
-      setPredictions(prev => [newPrediction, ...prev]);
+      setCurrentScan(newScan);
+      setScans(prev => [newScan, ...prev]);
       
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Prediction failed. Please try again.';
+      const errorMessage = err instanceof Error ? err.message : 'Scan failed. Please try again.';
       setError(errorMessage);
-      console.error('Prediction error:', err);
+      console.error('Scan error:', err);
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleReset = () => {
-    setCurrentPrediction(null);
+    setCurrentScan(null);
     setError(null);
   };
 
@@ -76,8 +80,8 @@ const Index = () => {
         <Hero />
         
         <div className="max-w-5xl mx-auto">
-          <ImageUpload 
-            onUpload={handlePrediction}
+          <ThreatScanner 
+            onUpload={handleScan}
             isLoading={isLoading}
             onReset={handleReset}
             disabled={isLoading}
@@ -85,19 +89,19 @@ const Index = () => {
 
           {error && (
             <div className="mt-8 p-6 cyber-glass border border-destructive/50 rounded-sm animate-pulse-cyber">
-              <p className="text-destructive text-center font-bold text-cyber">[ERROR] {error}</p>
+              <p className="text-destructive text-center font-bold text-cyber">&gt; [ERROR] {error} &lt;</p>
             </div>
           )}
 
-          {currentPrediction && (
+          {currentScan && (
             <div className="mt-12">
-              <PredictionResult prediction={currentPrediction} />
+              <ThreatAnalysisResult scan={currentScan} />
             </div>
           )}
 
-          {predictions.length > 0 && (
+          {scans.length > 0 && (
             <div className="mt-16">
-              <PredictionHistory predictions={predictions} />
+              <ScanHistory scans={scans} />
             </div>
           )}
         </div>

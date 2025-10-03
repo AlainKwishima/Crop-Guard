@@ -30,9 +30,9 @@ export const Header = () => {
             </div>
             <div>
               <h1 className="text-3xl font-black gradient-text text-cyber tracking-wider">
-                CROPGUARD
+                NEXUS SHIELD
               </h1>
-              <p className="text-xs text-primary font-bold text-cyber">NEURAL INTELLIGENCE SYSTEM</p>
+              <p className="text-xs text-primary font-bold text-cyber">NEURAL THREAT INTELLIGENCE</p>
             </div>
           </Link>
           
