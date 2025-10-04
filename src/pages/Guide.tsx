@@ -1,4 +1,4 @@
-import { Camera, Upload, Zap, CheckCircle, Play, ArrowRight } from 'lucide-react';
+import { Camera, Upload, Zap, CheckCircle, Play, ArrowRight, Shield } from 'lucide-react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Button } from '@/components/ui/button';
@@ -9,65 +9,65 @@ const Guide = () => {
   const steps = [
     {
       icon: <Upload className="h-8 w-8" />,
-      title: "NEURAL UPLOAD",
-      description: "Capture images via neural interface or upload existing data from drone swarms or surveillance networks.",
+      title: "THREAT UPLOAD",
+      description: "Upload suspicious files, URLs, or network traffic captures for comprehensive security analysis.",
       details: [
-        "Optimize photon capture for enhanced analysis",
-        "Target infected sectors for close-range neural scanning", 
-        "Multi-vector angles enhance detection precision",
-        "Neural formats: JPEG, PNG, WebP protocols supported"
+        "Support for executables, documents, scripts, containers",
+        "Drag-and-drop interface for rapid scanning",
+        "Batch upload for multiple file analysis",
+        "Supported formats: EXE, DLL, PDF, ZIP, JS, and 50+ more"
       ]
     },
     {
       icon: <Zap className="h-8 w-8" />,
       title: "QUANTUM ANALYSIS", 
-      description: "Our quantum AI core processes visual data and analyzes threat patterns, diseases, and nutrient deficiencies.",
+      description: "Our quantum AI core performs deep behavioral analysis, signature matching, and heuristic threat detection.",
       details: [
-        "Analysis completes in 1-3 nanoseconds",
-        "Neural networks examine cellular patterns and anomalies",
-        "Cross-references against database of 500+ threat classifications",
-        "99.7%+ precision across planetary crop varieties"
+        "Analysis completes in 2-5 seconds",
+        "Neural networks examine code behavior and patterns",
+        "Cross-references against 300+ threat categories",
+        "98%+ accuracy across malware families and attack vectors"
       ]
     },
     {
       icon: <CheckCircle className="h-8 w-8" />,
-      title: "NEURAL OUTPUT",
-      description: "Receive comprehensive threat analysis with identification protocols, confidence metrics, and neutralization strategies.",
+      title: "THREAT INTELLIGENCE",
+      description: "Receive detailed threat reports with risk scores, MITRE ATT&CK mapping, and remediation recommendations.",
       details: [
-        "Threat classification and severity assessment",
-        "Neutralization protocols and timing specifications",
-        "Prevention algorithms for future threat mitigation",
-        "Direct interface with quantum agronomist specialists"
+        "Threat classification and severity rating",
+        "Indicators of Compromise (IoCs) extraction",
+        "Recommended mitigation and response procedures",
+        "Integration with SIEM and ticketing systems"
       ]
     }
   ];
 
   const tips = [
     {
-      title: "NEURAL IMAGING PROTOCOLS",
+      title: "FILE SCANNING BEST PRACTICES",
       items: [
-        "Utilize quantum daylight frequencies when possible - avoid direct solar radiation or shadow interference",
-        "Maintain scanner stability to prevent data corruption",
-        "Fill capture matrix with target biological anomalies",
-        "Clean optical sensors before neural scanning operations"
+        "Scan files in isolated sandbox environments before deployment",
+        "Upload suspicious email attachments and downloads immediately",
+        "Include file metadata and source information for context",
+        "Enable behavioral analysis for advanced persistent threats"
       ]
     },
     {
-      title: "OPTIMAL PROCEDURES",
+      title: "NETWORK SECURITY PROTOCOLS",
       items: [
-        "Execute multiple scans of different infected sectors",
-        "Include healthy tissue samples for neural comparison", 
-        "Document coordinates and temporal data for tracking protocols",
-        "Regular surveillance cycles enable early threat detection"
+        "Integrate NEXUS SHIELD with your SIEM for automated alerting",
+        "Scan all external file uploads and API inputs", 
+        "Monitor outbound traffic for data exfiltration patterns",
+        "Regular vulnerability scans enable proactive defense"
       ]
     },
     {
-      title: "DRONE SWARM OPERATIONS",
+      title: "INCIDENT RESPONSE",
       items: [
-        "Deploy at optimal altitude (10-50 meters) for cellular detail capture",
-        "Execute grid formation patterns for systematic sector coverage",
-        "Schedule surveillance during optimal photonic conditions",
-        "Process data streams in synchronized batches for maximum efficiency"
+        "Quarantine detected threats immediately in secure containers",
+        "Document all threat indicators for forensic analysis",
+        "Coordinate with security team using integrated alerting",
+        "Review threat reports for lateral movement indicators"
       ]
     }
   ];
@@ -84,8 +84,8 @@ const Guide = () => {
             <span className="block text-foreground text-3xl md:text-5xl">OPERATION GUIDE</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-neural">
-            &gt; ACCESSING OPERATIONAL PROTOCOLS &lt;<br/>
-            Master the quantum interface for maximum threat detection precision across agricultural sectors.
+            &gt; ACCESSING SECURITY PROTOCOLS &lt;<br/>
+            Master the quantum threat detection interface for maximum cybersecurity protection across all attack vectors.
           </p>
           <Button variant="cyber" size="lg" className="mb-8">
             <Play className="h-5 w-5 mr-3" />
@@ -95,7 +95,7 @@ const Guide = () => {
 
         {/* Steps Section */}
         <div className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-16 text-cyber text-primary">THREE NEURAL PROTOCOLS</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-cyber text-primary">THREE SECURITY PROTOCOLS</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div key={step.title} className="card-cyber group relative">
@@ -127,9 +127,9 @@ const Guide = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-cyber text-accent">OPTIMIZATION PROTOCOLS</h2>
           <Tabs defaultValue="quality" className="max-w-5xl mx-auto">
             <TabsList className="grid w-full grid-cols-3 cyber-glass p-2 rounded-sm">
-              <TabsTrigger value="quality" className="text-cyber font-bold">NEURAL IMAGING</TabsTrigger>
-              <TabsTrigger value="practices" className="text-cyber font-bold">OPTIMAL PROCEDURES</TabsTrigger>
-              <TabsTrigger value="drone" className="text-cyber font-bold">DRONE OPERATIONS</TabsTrigger>
+              <TabsTrigger value="quality" className="text-cyber font-bold">FILE SCANNING</TabsTrigger>
+              <TabsTrigger value="practices" className="text-cyber font-bold">NETWORK SECURITY</TabsTrigger>
+              <TabsTrigger value="drone" className="text-cyber font-bold">INCIDENT RESPONSE</TabsTrigger>
             </TabsList>
             
             {tips.map((tip, index) => (
@@ -156,22 +156,22 @@ const Guide = () => {
 
         {/* Sample Images Section */}
         <div className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-16 text-cyber text-primary">SAMPLE NEURAL OUTPUTS</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-cyber text-primary">THREAT DETECTION EXAMPLES</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { disease: "EARLY BLIGHT PROTOCOL", crop: "TOMATO SECTOR", confidence: "99.4%" },
-              { disease: "RUST PATHOGEN", crop: "CORN QUADRANT", confidence: "97.8%" },
-              { disease: "MILDEW CONTAMINATION", crop: "WHEAT ZONE", confidence: "99.7%" }
+              { threat: "RANSOMWARE DETECTED", type: "WANNACRY VARIANT", confidence: "99.2%" },
+              { threat: "SQL INJECTION ATTEMPT", type: "WEB APPLICATION", confidence: "97.8%" },
+              { threat: "TROJAN BACKDOOR", type: "REMOTE ACCESS", confidence: "98.5%" }
             ].map((sample, index) => (
-              <div key={sample.disease} className="card-neural group">
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-sm flex items-center justify-center border-b border-primary/30">
-                  <Camera className="h-16 w-16 text-primary animate-pulse-cyber group-hover:animate-glow" />
+              <div key={sample.threat} className="card-neural group">
+                <div className="h-48 bg-gradient-to-br from-destructive/20 to-accent/20 rounded-t-sm flex items-center justify-center border-b border-primary/30">
+                  <Shield className="h-16 w-16 text-destructive animate-pulse-cyber group-hover:animate-glow" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg text-cyber text-primary mb-2">{sample.disease}</h3>
-                  <p className="text-muted-foreground text-neural mb-4">{sample.crop}</p>
+                  <h3 className="font-bold text-lg text-cyber text-destructive mb-2">{sample.threat}</h3>
+                  <p className="text-muted-foreground text-neural mb-4">{sample.type}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-muted-foreground text-neural">NEURAL CONFIDENCE:</span>
+                    <span className="text-sm text-muted-foreground text-neural">DETECTION CONFIDENCE:</span>
                     <span className="font-black text-accent gradient-text text-xl">{sample.confidence}</span>
                   </div>
                 </div>
@@ -183,17 +183,17 @@ const Guide = () => {
         {/* Call to Action */}
         <div className="text-center">
           <div className="neural-glass max-w-3xl mx-auto border border-primary/30 animate-hologram p-10 rounded-sm">
-            <h3 className="text-3xl font-bold mb-6 text-cyber text-primary">READY TO ACTIVATE PROTECTION PROTOCOLS?</h3>
+            <h3 className="text-3xl font-bold mb-6 text-cyber text-primary">READY TO ACTIVATE CYBER DEFENSE?</h3>
             <p className="text-muted-foreground mb-8 text-neural text-lg">
-              &gt; INITIALIZE NEURAL ANALYSIS SYSTEMS &lt;<br/>
-              Begin analyzing your agricultural sectors today with our neural core and experience quantum-enhanced crop protection.
+              &gt; INITIALIZE THREAT DETECTION SYSTEMS &lt;<br/>
+              Begin protecting your digital infrastructure today with quantum AI-powered threat intelligence and real-time security monitoring.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button variant="cyber" size="lg">
-                INITIATE ANALYSIS
+                START THREAT SCAN
                 <ArrowRight className="h-5 w-5 ml-3" />
               </Button>
-              <Button variant="neural" size="lg">VIEW PRICING MATRIX</Button>
+              <Button variant="neural" size="lg">VIEW SECURITY PLANS</Button>
             </div>
           </div>
         </div>

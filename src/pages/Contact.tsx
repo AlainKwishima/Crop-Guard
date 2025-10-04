@@ -32,27 +32,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "NEURAL TRANSMISSION",
-      details: "neural@cropguard.ai",
-      description: "Send quantum-encrypted messages - response within 12 hours"
+      title: "SECURE COMMUNICATION",
+      details: "security@nexusshield.ai",
+      description: "Encrypted email support - response within 2 hours for critical incidents"
     },
     {
       icon: Phone,
-      title: "DIRECT NEURAL LINK",
-      details: "+1 (555) 123-CYBER",
-      description: "Neural network available: 0900-1800 PST"
+      title: "24/7 SOC HOTLINE",
+      details: "+1 (555) 789-SECURE",
+      description: "Security Operations Center available 24/7/365"
     },
     {
       icon: MapPin,
-      title: "COMMAND CENTER",
-      details: "Quantum Agricultural Hub, Neural Valley, CA",
-      description: "Schedule neural interface for direct consultation"
+      title: "SECURITY COMMAND CENTER",
+      details: "Cyber Defense Hub, Silicon Valley, CA",
+      description: "Schedule on-site security consultation and assessment"
     },
     {
       icon: Clock,
-      title: "OPERATIONAL CYCLES",
-      details: "Mon - Fri: 09:00 - 18:00",
-      description: "Emergency protocols available for critical threats"
+      title: "RESPONSE TIMES",
+      details: "Critical: <2hrs | High: <4hrs | Medium: <24hrs",
+      description: "Emergency incident response available for Enterprise customers"
     }
   ];
 
@@ -68,9 +68,9 @@ const Contact = () => {
             <span className="block text-foreground text-3xl md:text-5xl">CONTACT PROTOCOL</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-neural">
-            &gt; ESTABLISHING COMMUNICATION LINK &lt;<br/>
-            Questions about CropGuard Neural Intelligence? Need support with threat detection protocols? 
-            Our quantum assistance network is ready to interface.
+            &gt; ESTABLISHING SECURE CHANNEL &lt;<br/>
+            Questions about NEXUS SHIELD? Need support with threat detection or security operations? 
+            Our security operations center is standing by for immediate assistance.
           </p>
         </div>
 
@@ -166,9 +166,9 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold mb-8 text-cyber text-accent">COMMUNICATION PROTOCOLS</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed text-neural text-lg">
-                &gt; DEDICATED SUPPORT NETWORK ACTIVE &lt;<br/>
-                We're committed to providing quantum-enhanced support for all your agricultural intelligence needs. 
-                Interface with us through any of the following neural channels.
+                &gt; SECURITY OPERATIONS CENTER ACTIVE &lt;<br/>
+                We're committed to providing enterprise-grade security support for all your threat detection and incident response needs. 
+                Contact us through any of the following secure channels.
               </p>
             </div>
 
@@ -196,30 +196,30 @@ const Contact = () => {
 
             {/* FAQ Section */}
             <div className="neural-glass p-8 rounded-sm border border-accent/30">
-              <h3 className="text-xl font-bold mb-6 text-cyber text-accent">QUICK NEURAL ACCESS</h3>
+              <h3 className="text-xl font-bold mb-6 text-cyber text-accent">QUICK SECURITY FAQ</h3>
               <div className="space-y-4">
                 <details className="group">
                   <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
-                    &gt; How precise is the threat detection system?
+                    &gt; How accurate is NEXUS SHIELD threat detection?
                   </summary>
                   <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
-                    Our quantum AI core achieves 99.7% precision across over 500 agricultural threat classifications, continuously evolving with new data protocols.
+                    Our quantum AI achieves 98%+ accuracy across 300+ threat categories including malware, vulnerabilities, and attack patterns with continuous threat intelligence updates.
                   </p>
                 </details>
                 <details className="group">
                   <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
-                    &gt; What neural formats are compatible?
+                    &gt; What file formats can be scanned?
                   </summary>
                   <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
-                    We support JPG, PNG, and WebP neural formats. Images should be quantum-optimized and well-illuminated for maximum analysis efficiency.
+                    We support 50+ file formats including executables (.exe, .dll), documents (.pdf, .doc), scripts (.js, .py, .sh), archives (.zip, .rar), and container images.
                   </p>
                 </details>
                 <details className="group">
                   <summary className="cursor-pointer text-sm font-bold text-foreground hover:text-primary transition-colors text-cyber">
-                    &gt; Is mobile neural interface available?
+                    &gt; Is API integration available?
                   </summary>
                   <p className="mt-3 text-sm text-muted-foreground pl-4 text-neural">
-                    Currently, we offer quantum web-based platform optimized for mobile neural devices. Native interface app is in development protocols.
+                    Yes, Professional and Enterprise plans include full REST API access with comprehensive documentation for SIEM, SOAR, and CI/CD pipeline integrations.
                   </p>
                 </details>
               </div>

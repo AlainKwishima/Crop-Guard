@@ -6,32 +6,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const Community = () => {
   const stats = [
-    { label: "NEURAL OPERATORS", value: "100K+", icon: <Users className="h-8 w-8" /> },
-    { label: "SECTORS PROTECTED", value: "5M+ acres", icon: <Heart className="h-8 w-8" /> },
-    { label: "THREATS NEUTRALIZED", value: "2.5M+", icon: <Trophy className="h-8 w-8" /> },
-    { label: "SUCCESS PROTOCOLS", value: "50K+", icon: <MessageSquare className="h-8 w-8" /> }
+    { label: "SECURITY RESEARCHERS", value: "250K+", icon: <Users className="h-8 w-8" /> },
+    { label: "ORGANIZATIONS PROTECTED", value: "15K+", icon: <Heart className="h-8 w-8" /> },
+    { label: "THREATS NEUTRALIZED", value: "50M+", icon: <Trophy className="h-8 w-8" /> },
+    { label: "VULNERABILITIES FOUND", value: "100K+", icon: <MessageSquare className="h-8 w-8" /> }
   ];
 
   const communityChannels = [
     {
-      name: "NEURAL DISCORD",
-      description: "Join our quantum Discord network for real-time intelligence sharing, Q&A protocols, and peer neural support.",
-      members: "50K+ neural nodes",
+      name: "SECURITY DISCORD",
+      description: "Join our Discord server for real-time threat intelligence sharing, security research discussions, and community support.",
+      members: "100K+ security researchers",
       icon: <MessageSquare className="h-6 w-6" />,
       link: "#",
       primary: true
     },
     {
-      name: "GITHUB NEXUS",
-      description: "Contribute to open-source neural tools, report system anomalies, and access our quantum API documentation.",
-      members: "10K+ contributors", 
+      name: "GITHUB SECURITY LAB",
+      description: "Contribute to open-source security tools, report vulnerabilities, access threat intelligence APIs, and collaborate on detection rules.",
+      members: "25K+ contributors", 
       icon: <Github className="h-6 w-6" />,
       link: "#"
     },
     {
-      name: "TWITTER MATRIX",
-      description: "Follow our neural transmissions for updates, enhancement protocols, and success stories from operations worldwide.",
-      members: "150K+ followers",
+      name: "TWITTER THREAT FEED",
+      description: "Follow for real-time threat alerts, zero-day disclosures, security research updates, and success stories from the field.",
+      members: "300K+ followers",
       icon: <Twitter className="h-6 w-6" />,
       link: "#"
     }
@@ -39,25 +39,25 @@ const Community = () => {
 
   const successStories = [
     {
-      name: "OPERATOR SANTOS",
-      location: "BRAZIL SECTOR",
-      crop: "COFFEE CULTIVATION",
-      story: "Increased yield efficiency by 45% after early blight threat neutralization using CropGuard Neural Intelligence",
-      avatar: "OS"
+      name: "DR. SARAH CHEN",
+      location: "CYBERSEC FINTECH",
+      organization: "GLOBAL BANKING",
+      story: "Detected and neutralized APT group targeting financial infrastructure, preventing $50M in potential losses using NEXUS SHIELD",
+      avatar: "SC"
     },
     {
-      name: "COMMANDER PETERSON",  
-      location: "IOWA QUADRANT",
-      crop: "CORN OPERATIONS",
-      story: "Prevented $150K in operational losses through early pest threat identification protocols",
-      avatar: "CP"
+      name: "JAMES MORRISON",  
+      location: "SOC DIRECTOR",
+      organization: "HEALTHCARE SYSTEMS",
+      story: "Identified ransomware campaign 48 hours before deployment, protecting 500K patient records and critical medical systems",
+      avatar: "JM"
     },
     {
-      name: "SPECIALIST PATEL",
-      location: "INDIA REGION", 
-      crop: "RICE PRODUCTION",
-      story: "Enhanced rice quality metrics and reduced chemical interventions by 60% using neural guidance",
-      avatar: "SP"
+      name: "PRIYA KUMAR",
+      location: "THREAT HUNTER", 
+      organization: "E-COMMERCE PLATFORM",
+      story: "Discovered zero-day SQL injection vulnerability affecting 10M users, coordinated responsible disclosure and patch deployment",
+      avatar: "PK"
     }
   ];
 
@@ -73,8 +73,8 @@ const Community = () => {
             <span className="block text-foreground text-3xl md:text-5xl">NETWORK</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-neural">
-            &gt; CONNECTING AGRICULTURAL INTELLIGENCE NODES &lt;<br/>
-            Interface with operators, agronomists, and AI specialists who are revolutionizing agricultural systems across the network.
+            &gt; CONNECTING CYBER DEFENSE INTELLIGENCE NODES &lt;<br/>
+            Interface with security researchers, threat hunters, and SOC analysts who are defending digital infrastructure worldwide.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ const Community = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-cyber text-primary">{story.name}</h3>
-                      <p className="text-muted-foreground text-neural">{story.location} • {story.crop}</p>
+                      <p className="text-muted-foreground text-neural">{story.location} • {story.organization}</p>
                     </div>
                   </div>
                   <p className="text-muted-foreground italic text-neural">&gt; {story.story} &lt;</p>
@@ -158,8 +158,8 @@ const Community = () => {
           <div className="neural-glass max-w-3xl mx-auto border border-primary/30 animate-hologram p-10 rounded-sm">
             <h3 className="text-3xl font-bold mb-6 text-cyber text-primary">READY TO SHARE YOUR PROTOCOL?</h3>
             <p className="text-muted-foreground mb-8 text-neural text-lg">
-              &gt; JOIN THE NEURAL COLLECTIVE &lt;<br/>
-              Interface with thousands of operators who are transforming agricultural systems with quantum AI-powered crop protection.
+              &gt; JOIN THE CYBER DEFENSE NETWORK &lt;<br/>
+              Connect with thousands of security professionals protecting critical infrastructure with quantum AI-powered threat intelligence.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button variant="cyber" size="lg">INITIATE NEURAL LINK</Button>

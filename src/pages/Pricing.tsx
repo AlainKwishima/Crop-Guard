@@ -9,50 +9,53 @@ const Pricing = () => {
     {
       name: "NEURAL CORE",
       price: "FREE",
-      description: "Entry-level quantum intelligence access",
+      description: "Essential protection for individual security researchers",
       features: [
-        "50 AI analyses per cycle",
-        "Basic threat detection protocols",
-        "Neural network support",
-        "Mobile interface access",
-        "Community matrix access"
+        "100 threat scans per month",
+        "Basic malware detection",
+        "Vulnerability scanning",
+        "Community threat intelligence",
+        "Email security alerts",
+        "7-day scan history"
       ],
-      buttonText: "INITIALIZE SYSTEM",
+      buttonText: "ACTIVATE DEFENSE",
       popular: false,
       icon: <Zap className="h-6 w-6" />
     },
     {
       name: "QUANTUM PRO",
-      price: "$29",
-      period: "/cycle",
-      description: "Advanced neural intelligence for medium operations",
+      price: "$99",
+      period: "/month",
+      description: "Advanced protection for security teams and enterprises",
       features: [
-        "Unlimited quantum analyses",
-        "Enhanced AI neural models",
-        "Priority support protocols",
-        "Drone swarm integration",
-        "Custom threat reporting",
-        "API neural interface",
-        "Team collaboration matrix"
+        "Unlimited threat scans",
+        "Advanced AI threat detection",
+        "Real-time threat intelligence",
+        "API access & integrations",
+        "Priority incident response",
+        "Custom security rules",
+        "90-day forensic logs",
+        "Slack/Teams integration"
       ],
-      buttonText: "ACTIVATE TRIAL MODE",
+      buttonText: "START 14-DAY TRIAL",
       popular: true,
       icon: <Shield className="h-6 w-6" />
     },
     {
       name: "ENTERPRISE NEXUS",
       price: "CUSTOM",
-      description: "Maximum intelligence for planetary operations",
+      description: "Maximum security for mission-critical operations",
       features: [
-        "All Quantum Pro protocols",
+        "All Quantum Pro features",
+        "Dedicated SOC support 24/7",
         "Custom AI model training",
-        "Dedicated neural support",
-        "On-premise deployment",
-        "SLA quantum guarantee", 
-        "Custom integrations",
-        "White-label solutions"
+        "On-premise deployment option",
+        "99.99% SLA guarantee",
+        "White-label solutions",
+        "Compliance reporting (SOC 2, ISO 27001)",
+        "Dedicated security analyst"
       ],
-      buttonText: "CONTACT NEURAL COMMAND",
+      buttonText: "CONTACT SECURITY TEAM",
       popular: false,
       icon: <Star className="h-6 w-6" />
     }
@@ -69,8 +72,8 @@ const Pricing = () => {
             <span className="block text-foreground text-3xl md:text-5xl">PRICING MATRIX</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-neural">
-            &gt; SELECT YOUR INTELLIGENCE LEVEL &lt;<br/>
-            From micro-operations to planetary-scale agricultural networks, choose your neural enhancement protocol.
+            &gt; SELECT YOUR PROTECTION LEVEL &lt;<br/>
+            From individual security researchers to enterprise-scale operations, choose your defense protocol.
           </p>
         </div>
 
@@ -127,12 +130,12 @@ const Pricing = () => {
 
         <div className="mt-20 text-center">
           <p className="text-muted-foreground mb-6 text-neural text-lg">
-            &gt; ALL NEURAL PROTOCOLS INCLUDE QUANTUM AI CORE AND CONTINUOUS UPGRADES &lt;
+            &gt; ALL PLANS INCLUDE QUANTUM AI THREAT DETECTION AND CONTINUOUS UPDATES &lt;
           </p>
           <div className="flex justify-center space-x-12 text-sm text-muted-foreground text-neural">
-            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />99.9% UPTIME SLA</span>
-            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />QUANTUM ENCRYPTED</span>
-            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />30-DAY NEURAL GUARANTEE</span>
+            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />99.99% UPTIME SLA</span>
+            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />ZERO-TRUST ENCRYPTED</span>
+            <span className="flex items-center"><Check className="h-4 w-4 text-accent mr-2" />30-DAY MONEY BACK</span>
           </div>
         </div>
       </main>
