@@ -66,10 +66,6 @@ NEXUS SHIELD is an **AI-driven cybersecurity platform** designed to protect digi
 
 ---
 
-## 📡 Communication
-
-* 📧 **[security@nexusshield.ai](mailto:security@nexusshield.ai)**
-* ☎️ **+1 (555) 789-SECURE**
 
 ---
 
